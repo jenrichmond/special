@@ -1,0 +1,120 @@
+---
+title             : "The title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "Christina Riochios"
+    affiliation   : "1"
+     # Define only one corresponding author
+    address       : "Postal address"
+    email         : "c.riochios@unsw.edu.au"
+    role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
+      - Conceptualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+  - name          : "Jenny L. Richmond"
+    affiliation   : "1"
+    corresponding : yes 
+    email         : "c.riochios@unsw.edu.au"
+    role:
+      - Conceptualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+
+affiliation:
+  - id            : "1"
+    institution   : "University of New South Wales"
+ 
+authornote: |
+  School of Psychology, UNSW  
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+  
+  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
+  
+  One or two sentences to put the results into a more **general context**.
+  
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+r_refs("r-references.bib")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+
+The field of psychology, like many other scientific disciplines, is currently facing a replication crisis, whereby researchers are struggling to replicate existing findings. In 2015, The Reproducibility Project: Psychology, a group of 270 psychological researchers, attempted to replicate the findings of 100 psychology experiments. Whilst 97% of the original studies generated statistically significant findings, only 36% of the replication attempts were significant (Aarts et al., 2015). These findings emphasise the severity of the replication crisis and validate the academic community’s growing concern.  
+
+In efforts to overcome the replication crisis, psychological researchers have turned to Open Science. Open Science practices are those that increase the transparency of and access to scientific research (Klein et al., 2018). Open data and open material practices, for example, involve researchers sharing their materials and raw data on publicly accessible online repositories. Such practices allow academics to replicate findings more easily and successfully (Hardwicke et al., 2018).  
+
+To encourage researchers to employ open science practices, psychology journals have implemented various types of incentives. One particularly popular incentive is the awarding of Open Science Badges. In 2013, the Center for Open Science established three Open Science Badges: Open Data, Open Materials and Preregistered, to acknowledge and reward articles for their use of open science practices (Center for Open Science, 2021). The Open Data Badge and the Open Materials Badge are awarded when the data and materials that are required to reproduce the results of a study are made publicly available online, whilst the Preregistered Badge is awarded when the study’s design and hypotheses are made available prior to data collection. To date, 75 journals have adopted the COS’s Open Science badges, 52 of which are psychology journals (Center for Open Science, 2021).  
+
+A study on the first psychology journal to adopt Open Science Badges, Psychological Science, has shown the initiative to be extremely effective in encouraging authors to adopt open science practices. In 2016, Kidwell et al. measured rates of data and material sharing in the 18 months before and after Open Science Badges were implemented at Psychological Science on the 1st of January 2014. Kidwell et al. found that the use of data sharing practices increased dramatically from 2.5%, prior to badges, to 39.4%, following badges. The use of material sharing practices also rose from 12.7% to 30.3%. Data and material sharing in control journals, such as the Journal of Personality and Social Psychology, which did not start awarding badges, remained low over the same time period (Kidwell et al., 2016).  These statistics demonstrate efficacy of Open Science Badges in stimulating the uptake of open science practices at Psychological Science.  
+
+Whilst the support for open science continues to grow, it is not yet clear whether researchers’ use of open science practices is consistent across the field of psychology. Notably, developmental psychology has received significant criticism for its lack of receptivity towards open science. For example, prominent developmental researchers, Prof Michael Frank and Dr. Jennifer Pfeifer, have labelled the Society for Research in Child Development’s (SRCD) open science policy as ‘weak’ and as one that ‘undervalues openness’ (Frank, 2019; Pfeifer, 2019). More recently, the Editor-in-Chief of the present journal, Infant and Child Development, Prof Moin Syed, stated that the uptake of open science within the field of developmental psychology has been ‘slow and uneven’ (Syed, 2021). A survey by Child Development which found that 80% of its authors felt their institutions failed to provide adequate guidance or financial support for sharing data, reinforce these viewpoints (SRCD Task Force on Scientific Integrity and Openness Survey (2017), cited in Gennetian et al., 2020). This evidence suggests that developmental psychology has been slower to adopt open science practices than other subfields. 
+
+Meta-research, the study of research itself, is one way we can empirically assess whether developmental psychology is truly behind in the open science movement. 
+
+Previous meta-research investigations, including Kidwell et al. (2016), have revealed the efficacy of open science incentives in increasing the use of open science practices. However, what remains unclear from these investigations is whether this progress is consistent across the field of psychology. To address this research question, Study 1A utilised open data from the Kidwell et al. study to examine how rates of data and material sharing may have differed between various psychological subfields. The opinions of academics led us to hypothesise that subfield differences in the use of open science practices exist. However, the nature and magnitude of these differences remained unclear. Study 1A was preregistered at the Open Science Framework: https://osf.io/3tsmy/.  
+
+
+# Methods
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
